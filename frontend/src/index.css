@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  /* Keep your nice fonts */
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  color-scheme: light dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  /* Soft background to match the pastel theme */
+  background: #F8FAFC; 
+}
+
+/* 
+   IMPORTANT: I removed the "width: 1126px" from #root 
+   so your dashboard can be full-screen and responsive! 
+*/
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
